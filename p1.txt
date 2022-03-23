@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+#include<graphics.h>
+void main()
+{
+int i;
+int gd=DETECT, gm;
+float steps, x1, y1, x2, y2, x, y, dy, dx, Xinc, Yinc;
+clrscr();
+initgraph(&gd, &gm, "C://TC//bgi");
+printf("Enter the two end points: \n");
+scanf("%f %f %f %f",&x1, &y1, &x2, &y2);
+dx=x2-x1;
+dy=y2-y1;
+if(dx<dy)
+steps=dy;
+else
+steps=d
+x=x1;
+y=y1;
+Xinc=dx/steps;
+Yinc=dy/steps;
+putpixel(x,y,4);
+for(i=0; i<=steps; i++)
+{
+x=x+Xinc;
+y=y+Yinc;
+putpixel(x,y,4);
+}
+getch();
+}

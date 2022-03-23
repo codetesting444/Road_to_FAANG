@@ -26,7 +26,7 @@ void combinationSum(vector<int> arr,int index,int target,int size,vector<vector<
 int main(){
 vector<vector<int>> ans;
 vector<int> nums;
-vector<int> arr = {2,3,6,7};
+vector<int> arr = {1,2,3,4,5,6,7,8,9,10};
 int target = 7;
 
 combinationSum(arr,0,target,arr.size(),ans,nums);
